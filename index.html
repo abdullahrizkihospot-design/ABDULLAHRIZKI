@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Abdullah Rizki — Portofolio</title>
+<style>
+:root{--bg:#f6f8f3;--card:#fff;--ink:#1d2a20;--mute:#5b6b5f;--g:#2f6b3f;--g2:#e3efe0;--line:#d8e2d4;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);color-scheme:light}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#101712;--card:#18221b;--ink:#e8f0e9;--mute:#9db0a1;--g:#7fc48e;--g2:#1f3024;--line:#2a3a2e;color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#101712;--card:#18221b;--ink:#e8f0e9;--mute:#9db0a1;--g:#7fc48e;--g2:#1f3024;--line:#2a3a2e;color-scheme:dark}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:70px}
+body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.65 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+a{color:var(--g)}
+.wrap{max-width:920px;margin:0 auto;padding:0 20px}
+nav{position:sticky;top:env(safe-area-inset-top,0px);background:var(--bg);border-bottom:1px solid var(--line);z-index:5}
+nav .wrap{display:flex;gap:6px;align-items:center;justify-content:space-between;height:56px;overflow-x:auto}
+nav b{white-space:nowrap}
+.tabs{display:flex;gap:6px}
+.tabs button{border:1px solid var(--line);background:var(--card);color:var(--ink);padding:7px 14px;border-radius:99px;font:inherit;font-size:14px;cursor:pointer;white-space:nowrap}
+.tabs button.on{background:var(--g);color:var(--bg);border-color:var(--g)}
+.hero{display:grid;grid-template-columns:120px 1fr;gap:28px;align-items:center;padding:56px 0 32px}
+.av{width:120px;height:120px;border-radius:50%;object-fit:cover;object-position:center 15%;border:3px solid var(--g)}
+h1{font-size:clamp(28px,5vw,42px);line-height:1.15;margin:0 0 6px}
+.role{color:var(--g);font-weight:600;margin:0 0 10px}
+.hero p{margin:0 0 14px;color:var(--mute);max-width:56ch}
+.btns{display:flex;flex-wrap:wrap;gap:10px}
+.btn{display:inline-block;padding:9px 18px;border-radius:10px;background:var(--g);color:var(--bg);text-decoration:none;font-weight:600;font-size:15px}
+.btn.o{background:transparent;color:var(--g);border:1px solid var(--g)}
+.stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:12px;margin:8px 0 8px}
+.stat{background:var(--g2);border-radius:14px;padding:14px 16px}
+.stat b{display:block;font-size:26px;color:var(--g)}
+.stat span{font-size:13px;color:var(--mute)}
+section{padding:30px 0}
+h2{font-size:22px;margin:0 0 16px;display:flex;align-items:center;gap:10px}
+h2::after{content:"";flex:1;height:1px;background:var(--line)}
+.card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:18px 20px;margin-bottom:14px}
+.card h3{margin:0;font-size:17px}
+.meta{color:var(--mute);font-size:14px;margin:2px 0 8px}
+.card ul{margin:8px 0 0;padding-left:20px}
+.card li{margin:3px 0}
+.chips{display:flex;flex-wrap:wrap;gap:8px}
+.chip{background:var(--g2);color:var(--ink);padding:5px 12px;border-radius:99px;font-size:14px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:14px}
+.pane{display:none}.pane.on{display:block}
+footer{border-top:1px solid var(--line);padding:24px 0 40px;color:var(--mute);font-size:14px;text-align:center}
+@media(max-width:560px){.hero{grid-template-columns:1fr;text-align:left;padding-top:36px}.av{width:96px;height:96px}}
+</style>
+</head>
+<body>
+<nav><div class="wrap"><b>Abdullah Rizki</b>
+<div class="tabs" role="tablist">
+<button id="t-pro" class="on" onclick="show('pro')">Profesional</button>
+<button id="t-per" onclick="show('per')">Personal</button>
+</div></div></nav>
+
+<main class="wrap">
+<header class="hero">
+<img class="av" alt="Foto Abdullah Rizki" src="data:image/jpeg;base64,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">
+<div>
+<h1>Abdullah Rizki, S.P.</h1>
+<p class="role">Sarjana Agribisnis · Operasional, Analisis Data &amp; Komunikasi Digital</p>
+<p>Lulusan Agribisnis berorientasi hasil dengan pengalaman riset lapangan bersama Kementerian Pertanian, strategi media sosial di industri perbankan, dan pemanfaatan AI untuk efisiensi kerja.</p>
+<div class="btns">
+<a class="btn" href="mailto:abdullahriskibanjar@gmail.com">Hubungi Saya</a>
+<a class="btn o" href="https://www.linkedin.com/in/abdullah-rizki-banjar/" target="_blank" rel="noopener">LinkedIn</a>
+</div>
+</div>
+</header>
+
+<div class="stats">
+<div class="stat"><b>3,59</b><span>IPK, Dengan Pujian</span></div>
+<div class="stat"><b>998+ jam</b><span>pengalaman proyek &amp; riset</span></div>
+<div class="stat"><b>2</b><span>magang bergengsi (2024)</span></div>
+<div class="stat"><b>2026</b><span>lulus S1 Agribisnis</span></div>
+</div>
+
+<!-- PROFESIONAL -->
+<div id="pro" class="pane on">
+<section id="pengalaman"><h2>Pengalaman</h2>
+<div class="card"><h3>Agribisnis Padi Lahan Rawa — BPSDMP Kementan RI, Kalimantan Tengah</h3>
+<div class="meta">September – Desember 2024 · Kementerian Pertanian RI</div>
+<ul><li>Riset lapangan langsung di lahan pertanian binaan, termasuk budidaya padi sawah.</li>
+<li>Mengumpulkan dan mengolah data operasional pertanian.</li>
+<li>Memantau produktivitas tanaman dan menganalisis efisiensi pengelolaan agribisnis.</li>
+<li>Merancang dan mengimplementasikan proyek agribisnis serta manajemen budi daya padi.</li></ul></div>
+<div class="card"><h3>Social Media Officer — Bank BTPN Syariah, Pangkal Pinang</h3>
+<div class="meta">Februari – Juli 2024</div>
+<ul><li>Merancang dan mengeksekusi strategi komunikasi digital untuk audiens perusahaan.</li>
+<li>Memproduksi konten visual dan copywriting untuk meningkatkan engagement publik.</li>
+<li>Mengelola channel publikasi kreatif.</li></ul></div>
+<div class="card"><h3>Pengelolaan &amp; Budidaya Perkebunan Kelapa Sawit</h3>
+<div class="meta">Lahan mandiri / keluarga</div>
+<ul><li><b>Perawatan tanaman:</b> pemeliharaan rutin meliputi penyiangan gulma (weeding), pemangkasan pelepah (pruning), dan pembersihan piringan untuk mengoptimalkan penyerapan unsur hara.</li>
+<li><b>Manajemen pemupukan &amp; pengendalian HPT:</b> mengatur jadwal dan dosis pemupukan berimbang serta memantau sejak dini serangan hama dan penyakit tanaman (HPT).</li>
+<li><b>Manajemen panen &amp; pasca-panen:</b> mengawasi panen Tandan Buah Segar (TBS) sesuai kriteria matang panen untuk menjaga kualitas rendemen dan meminimalkan losses (brondolan tertinggal).</li></ul></div>
+</section>
+
+<section id="riset"><h2>Riset &amp; Proyek Akademik</h2>
+<div class="card"><h3>Peneliti Utama — Studi Mitigasi Dampak Intrusi Air Laut</h3>
+<div class="meta">Desa Tanjung Rejo, Kec. Percut Sei Tuan</div>
+<ul><li>Riset lapangan tentang dampak intrusi air laut terhadap lahan padi sawah.</li>
+<li>Mengolah data primer dan sekunder untuk merumuskan strategi adaptasi dan mitigasi bagi petani pesisir.</li>
+<li>Menyusun laporan komprehensif dan rekomendasi praktis.</li></ul></div>
+</section>
+
+<section id="skill"><h2>Keterampilan</h2>
+<div class="grid">
+<div class="card"><h3>Manajemen &amp; Operasional</h3><div class="chips" style="margin-top:10px"><span class="chip">Manajemen Proyek</span><span class="chip">Analisis Data Lapangan</span><span class="chip">Evaluasi Efisiensi</span><span class="chip">Studi Kelayakan</span></div></div>
+<div class="card"><h3>Komunikasi &amp; Digital</h3><div class="chips" style="margin-top:10px"><span class="chip">Social Media Strategy</span><span class="chip">Copywriting</span><span class="chip">Content Creation</span><span class="chip">Brand Engagement</span></div></div>
+<div class="card"><h3>Perangkat Lunak</h3><div class="chips" style="margin-top:10px"><span class="chip">Word</span><span class="chip">Excel</span><span class="chip">PowerPoint</span><span class="chip">Canva</span><span class="chip">CapCut</span></div></div>
+<div class="card"><h3>Teknologi &amp; AI</h3><div class="chips" style="margin-top:10px"><span class="chip">Tool AI untuk alur kerja</span><span class="chip">Cloud Computing</span><span class="chip">Model Studio</span></div></div>
+</div></section>
+
+<section id="edu"><h2>Pendidikan &amp; Pelatihan</h2>
+<div class="card"><h3>S1 Agribisnis — Universitas Muhammadiyah Sumatera Utara</h3>
+<div class="meta">2021 – 2026 · IPK 3,59 · Dengan Pujian</div>
+<div>Skripsi: <i>Analisis Pendapatan Petani Serta Strategi Adaptasi Terhadap Intrusi Air Laut Pada Lahan Padi Sawah di Desa Tanjung Rejo, Kecamatan Percut Sei Tuan.</i></div></div>
+<div class="card"><h3>SMKN 1 Sei Kanan — Jurusan Akuntansi Keuangan Lembaga</h3>
+<div class="meta">Tahun ajaran 2020/2021 · Nilai rata-rata ijazah 82</div>
+<ul><li>Praktik Kerja Lapangan (PKL) di Badan Pengelolaan Keuangan Daerah (BPKD) Kabupaten Labuhanbatu Selatan, kriteria <b>Lulus Baik</b>:<ul><li>Periode 1: 1 Oktober 2019 – 6 November 2019</li><li>Periode 2: 7 Januari 2020 – 5 Maret 2020</li></ul></li></ul></div>
+<div class="card"><h3>Pelatihan</h3><ul>
+<li>Introduction to Cloud Computing (2025) — Pusat Pengembangan Literasi Digital</li>
+<li>Memahami Aspek Pengembangan Produk AI — Pusat Pengembangan Literasi Digital</li>
+<li>Alibaba Cloud Model Studio and Qwen — Pusat Pengembangan Talenta Digital</li></ul></div>
+</section>
+</div>
+
+<!-- PERSONAL -->
+<div id="per" class="pane">
+<section><h2>Alur Hijau</h2>
+<div class="card"><h3>Proyek edukasi digital</h3>
+<div class="meta">YouTube &amp; Blog</div>
+<p style="margin:6px 0 10px">Edukasi pertanian untuk Gen Z, pelestarian lingkungan, dan mitigasi intrusi air laut pada lahan pertanian, disampaikan lewat konten yang ringan dan mudah dipahami.</p>
+<a class="btn o" href="https://www.youtube.com/@alurhijau" target="_blank" rel="noopener">Kunjungi Channel</a></div>
+</section>
+<section><h2>Organisasi &amp; Kepemimpinan</h2>
+<div class="card"><h3>Kepala Bidang Informasi dan Komunikasi</h3>
+<div class="meta">HM IKLAB RAYA Komisariat UMSU · 2023 – 2024</div></div>
+</section>
+<section><h2>Minat &amp; Nilai</h2>
+<div class="card"><div class="chips"><span class="chip">Social Impact</span><span class="chip">Keberlanjutan</span><span class="chip">Pertanian Pesisir</span><span class="chip">Edukasi Digital</span><span class="chip">Konten Kreatif</span></div></div>
+</section>
+</div>
+
+<section id="kontak"><h2>Kontak</h2>
+<div class="card">
+<div>Email: <a href="mailto:abdullahriskibanjar@gmail.com">abdullahriskibanjar@gmail.com</a></div>
+<div>WhatsApp: <a href="https://wa.me/6282373172615" target="_blank" rel="noopener">0823 7317 2615</a></div>
+<div>LinkedIn: <a href="https://www.linkedin.com/in/abdullah-rizki-banjar/" target="_blank" rel="noopener">abdullah-rizki-banjar</a></div>
+<div>Domisili: Labuhanbatu Selatan, Sumatera Utara</div>
+</div></section>
+</main>
+<footer>© 2026 Abdullah Rizki</footer>
+
+<script>
+function show(k){
+  document.getElementById('pro').classList.toggle('on',k==='pro');
+  document.getElementById('per').classList.toggle('on',k==='per');
+  document.getElementById('t-pro').classList.toggle('on',k==='pro');
+  document.getElementById('t-per').classList.toggle('on',k==='per');
+  try{history.replaceState(null,'',k==='per'?'#personal':'#profesional')}catch(e){}
+}
+if(location.hash==='#personal')show('per');
+</script>
+</body>
+</html>
